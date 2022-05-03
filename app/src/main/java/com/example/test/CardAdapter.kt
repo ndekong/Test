@@ -25,7 +25,8 @@ class CardAdapter(val context: Context, private val theList:List<Exhibit>) :
                 exhibit_title.text = exhibit.title
 
                 Picasso.get()
-                    .load(exhibit.images)
+                        //TODO: Got the first image in the list of links for an object in the json response
+                    .load(exhibit.images[0])
                     .into(exhibit_image)
 
 

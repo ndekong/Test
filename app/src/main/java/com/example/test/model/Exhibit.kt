@@ -1,12 +1,8 @@
 package com.example.test.model
 
-import com.google.gson.annotations.SerializedName
 
-data class Exhibit (
-
-    @SerializedName("images")
-    val images: String,
-
-    @SerializedName("title")
+data class Exhibit(
+    //TODO: changed the model to an ArrayList of links
+    val images: ArrayList<String>,
     val title: String
-        )
+)
